@@ -7,18 +7,33 @@ This small project contains reference implementations for:
 - DFS-based topological sort and cycle detection (`topo_dfs.py`)
 
 Files:
-- `dijkstra.py` — dijkstra(graph, source) and a path reconstruction helper
-- `kruskal.py` — kruskal(edges) and an `edges_from_adjlist` helper
-- `topo_dfs.py` — topological_sort(graph) and has_cycle(graph)
-- `runner.py` — simple demo that runs each algorithm and prints results
+- `dijkstra.py` — Dijkstra's algorithm implementation.
+- `kruskal.py` — Kruskal's algorithm implementation.
+- `topo_dfs.py` — Topological sort and cycle detection implementation.
 - `requirements.txt` — minimal (Python standard library only)
 
-How to run:
+## How to Run
 
-Open PowerShell and run:
+Each algorithm can be run independently against the sample input files provided.
 
+Open a terminal and execute the following commands from the `algorithms_graphs` directory:
+
+### Dijkstra's Algorithm
+To run Dijkstra's algorithm and see the shortest paths from a source node:
 ```powershell
-python "c:\Users\admin\PROJ 2\algorithms_graphs\runner.py"
+python dijkstra.py
+```
+
+### Kruskal's Algorithm
+To find the Minimum Spanning Tree (MST) for the sample graphs:
+```powershell
+python kruskal.py
+```
+
+### Topological Sort and Cycle Detection
+To perform a topological sort or detect cycles in the sample directed graphs:
+```powershell
+python topo_dfs.py
 ```
 
 Notes:
